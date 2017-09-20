@@ -4,6 +4,10 @@ import Foundation
   import UIKit
 #endif
 
+#if os(OSX)
+  import AppKit
+#endif
+
 class ImageRenderer: NodeRenderer {
   weak var image: Image?
   

@@ -4,6 +4,10 @@ import Foundation
   import UIKit
 #endif
 
+#if os(OSX)
+  import AppKit
+#endif
+
 open class Image: Node {
   
   open let srcVar: Variable<String>
